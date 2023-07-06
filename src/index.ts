@@ -1,8 +1,7 @@
 import { doAction } from './do'
 import { Configuration, OpenAIApi } from 'openai'
 import { sayAction } from './say'
-
-const { Command } = require('commander')
+import { Command } from 'commander'
 
 const program = new Command()
 
@@ -10,6 +9,9 @@ const configuration = new Configuration({
   organization: 'org-0VwEdYkX1Hc3GC4YnK2NMw1s',
   apiKey: process.env.OPENAI_API_KEY,
 })
+if (!process.env.OPENAI_API_KEY) {
+  throw Error('process.env.OPENAI_API_KEY is empty string')
+}
 export const openai = new OpenAIApi(configuration)
 
 program.name('gcli').description('CLI tool using GPT-3.5 to help you remember how to do things')
