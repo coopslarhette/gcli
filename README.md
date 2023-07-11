@@ -11,5 +11,21 @@ Example:
 🤖: `aws s3 sync ./training-run-epoch-1012/data s3://my-bucket/training-run-epoch-1012/data
 `
 
+### Install
+
+[Install Homebrew](https://brew.sh/) (if you don't have it)
+
+`$ brew tap coopslarhette/formula`
+
+`$ brew install gcli`
+
 ### Usage
+
+`$ OPENAI_API_KEY='xxxxx' gcli do "kill the process on port 3000"`
+
+`$ OPENAI_API_KEY='xxxxx' gcli say "delete everything in C:\\Windows\System32"`
+
+The `say` command has a flag, `--explain` where the tool will also generate its an explanation/reasoning for the command(s) it chose.
+
+`$ OPENAI_API_KEY='xxxxx' gcli say "delete everything in C:\\Windows\System32" --explain`
 
