@@ -21,6 +21,8 @@ Example:
 
 ### Usage
 
+(note the programm is expecting an environment variable (`process.env`) containing an API key for OpenAI)
+
 `$ OPENAI_API_KEY='xxxxx' gcli do "kill the process on port 3000"`
 
 `$ OPENAI_API_KEY='xxxxx' gcli say "delete everything in C:\\Windows\System32"`
