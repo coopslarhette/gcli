@@ -6,7 +6,7 @@ Its intended to easy the transtiion between natural language and thought and ter
 
 Example:
 
-🧑: "copy everything in ./training-run-epoch-1012/data to s3://my-bucket/training-run-epoch-1012/data"
+🧑: "copy everything in ./epoch-1012/data to s3://my-bucket/epoch-1012/data"
 
 🤖: `aws s3 sync ./epoch-1012/data s3://my-bucket/epoch-1012/data
 `
