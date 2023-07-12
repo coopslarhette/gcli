@@ -8,7 +8,7 @@ Example:
 
 🧑: "copy everything in ./training-run-epoch-1012/data to s3://my-bucket/training-run-epoch-1012/data"
 
-🤖: `aws s3 sync ./training-run-epoch-1012/data s3://my-bucket/training-run-epoch-1012/data
+🤖: `aws s3 sync ./epoch-1012/data s3://my-bucket/epoch-1012/data
 `
 
 ### Install
