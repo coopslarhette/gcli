@@ -4,8 +4,15 @@
   "description": "CLI tool using GPT-3.5 to help you remember how to do things",
   "author": "@coopslarhette",
   "license": "MIT",
+  "bin": {
+    "gcli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepkg": "npm run build"
+  },
   "devDependencies": {
-    "@types/node": "^20.4.0",
+    "@types/node": "^18.19.74",
     "nodemon": "^2.0.22",
     "prettier": "^3.0.0",
     "ts-node": "^10.9.1",
