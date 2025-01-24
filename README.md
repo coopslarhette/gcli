@@ -2,7 +2,7 @@
 
 Gen-CLI is a fun little CLI tool I built in a day or so that is intended to help you do stuff, or remember how to do stuff, in the terminal.
 
-Its intended to easy the transtiion between natural language and thought and terminal commands. Given a action description of what you want to accomplish, it uses `gpt-3.5-turbo` to generate commands to accomplish that task.
+Its intended to easy the transtiion between natural language and thought and terminal commands. Given a action description of what you want to accomplish, it uses LLMs to generate commands to accomplish that task.
 
 Example:
 
