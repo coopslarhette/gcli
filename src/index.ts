@@ -13,7 +13,7 @@ if (!process.env.OPENAI_API_KEY) {
 }
 export const openai = new OpenAIApi(configuration)
 
-program.name('gcli').description('CLI tool using GPT-3.5 to help you remember how to do things')
+program.name('gcli').description('CLI tool using LLMs to help you remember how to do things')
 
 program
   .command('do')
