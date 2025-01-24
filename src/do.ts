@@ -4,7 +4,7 @@ import { openai } from './index'
 
 export async function doAction(actionDescription: string) {
   const completion = await openai.createChatCompletion({
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o',
     temperature: 0.3,
     messages: preprocess(generateCommandsTemplate, actionDescription),
   })
