@@ -6,7 +6,6 @@ import { Command } from 'commander'
 const program = new Command()
 
 const configuration = new Configuration({
-  organization: 'org-0VwEdYkX1Hc3GC4YnK2NMw1s',
   apiKey: process.env.OPENAI_API_KEY,
 })
 if (!process.env.OPENAI_API_KEY) {
